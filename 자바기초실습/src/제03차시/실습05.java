@@ -24,6 +24,7 @@ public class 실습05 {
 		System.out.println("배열 b[][]의 크기: "+ b.length);
 		System.out.println("배열 b[1]의 크기: "+b[1].length);
 		System.out.println("배열 b[4]의 크기: "+b[4].length);
+		
 	}
 
 }
