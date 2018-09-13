@@ -1,4 +1,4 @@
-package �ڵ��;
+package 자바코드업;
 
 import java.util.Scanner;
 
