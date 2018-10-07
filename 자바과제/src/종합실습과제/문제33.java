@@ -4,24 +4,22 @@ public class 문제33 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String n = sc.next();
-		char p[] = n.toCharArray();
-		int i, j;
-		for (i = 0; i <= (p.length-1)/2; i++) {
-			for (j =p.length; j >= (p.length-1)-i; j--) {
-				System.out.println("tet");
-				if (p[i]==p[j]) {
-					System.out.println("대칭수");
+		String su = sc.next();
+		char d[] = su.toCharArray();
+		int c = 0;
+		int j = d.length - 1;
+		for (int i = 0; i < d.length / 2; i++) {
 
-				}
-				/*if (p[i] != p[j]) {
-					System.out.print("비대칭수");
-					break;
-				}*/
+			if (d[i] == d[j - i]) {
+				c++;
+			}
+			if (d[i] != d[j - i]) {
+				System.out.print("비대칭수");
+				break;
 			}
 		}
-		System.out.println("tt");
+		if (c == j / 2) {
+			System.out.print("대칭수");
+		}
 	}
 }
-//(p.length - 1) / 2
-//p.length - 1
