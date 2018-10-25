@@ -1,5 +1,7 @@
+package 종합실습과제;
 
-public class M27 {
+
+public class 문제27 {
 	public static void main(String[] args) {
 		for(int i =1;i<=30;i++) {
 			if(Integer.toString(i).contains("3")) {
