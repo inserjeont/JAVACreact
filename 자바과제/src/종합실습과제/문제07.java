@@ -6,9 +6,8 @@ public class 문제07 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a, b;
-		a = sc.nextInt();
-		b = sc.nextInt();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
 		sc.close();
 		System.out.printf("두 정수: %d,%d\n",a,b);
 		System.out.printf("a AND b: %d\n",a&b);
