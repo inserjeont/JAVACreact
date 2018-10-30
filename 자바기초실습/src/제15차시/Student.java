@@ -3,12 +3,33 @@ package 제15차시;
 public class Student {
 	String name;
 	int grade;
-	int ban;
-	int number;
-	String telephone;
 
 	public Student() {
+
 	}
 
-	public Student(String n ) {name = n;}
+	public Student(String name) {
+		this.name = name;
+	}
+
+	public Student(String name, int grade) {
+		this(name);
+		this.grade = grade;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+
+	public int getGrade() {
+		return this.grade;
+	}
 }
