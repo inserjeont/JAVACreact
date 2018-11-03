@@ -9,13 +9,11 @@ public class 문제13 {
 		String a = sc.nextLine();
 		sc.close();
 		System.out.printf("직원코드: %s\n",a);
-		if (a.charAt(3) == '1') {
+		if (a.charAt(3) == '1')
 			System.out.printf("부서: 총무부");
-		}
-		if (a.charAt(3) == '2') {
+		if (a.charAt(3) == '2')
 			System.out.printf("부서: 인사부");
-		}
-		else		
+		else
 			System.out.printf("부서: 영업부");
 	}
 }
