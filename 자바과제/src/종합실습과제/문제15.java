@@ -7,7 +7,6 @@ public class 문제15 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
-		sc.close();
 		switch(a/10) {
 		case 10:
 		case 9:
