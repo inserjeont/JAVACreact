@@ -1,5 +1,4 @@
-package 테트리스;
-
+package 테트리스
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -20,24 +19,24 @@ public class TetrisBoard extends JPanel {
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 
-		// 테트리스맵을 게임판에 나타내기
+		// 테트리스게임판을 표시한다.
 		for (int i = 0; i < 20; i++) {
 			for (int j = 0; j < 10; j++) {
 				if (tw.테트리스맵[i][j] > 0) {
-					g.setColor(new Color(tw.테트리스맵[i][j]));// 판의 색깔
-					g.fillRect(100 + j * 30, 10 + i * 30, 30, 30);// 바둑판 모양
+					g.setColor(new Color(tw.�뀒�듃由ъ뒪留�[i][j]));// �뙋�쓽 �깋源�
+					g.fillRect(100 + j * 30, 10 + i * 30, 30, 30);// 諛붾몣�뙋 紐⑥뼇
 				}
 				g.setColor(Color.BLACK);
 				g.drawRect(100 + j * 30, 10 + i * 30, 30, 30);
 			}
 		}
 
-		// 게임판위에 블록조각 얹히기
+		//현재블록을 게임판 위에 얹힌다.
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 4; j++) {
-				if (tw.현재블록[i][j]>0) {
-					g.setColor(new Color(tw.현재블록[i][j]));// 판의 색깔
-					g.fillRect(100 + (tw.현재블록등장위치x+j) * 30, 10 + (tw.현재블록등장위치y+i) * 30, 30, 30);// 바둑판 모양
+				if (tw.�쁽�옱釉붾줉[i][j]>0) {
+					g.setColor(new Color(tw.현재블록[i][j]));// �뙋�쓽 �깋源�
+					g.fillRect(100 + (tw.현재블록등장위치+j) * 30, 10 + (tw.현재블록등장위치+i) * 30, 30, 30);// 諛붾몣�뙋 紐⑥뼇
 				}
 
 			}
